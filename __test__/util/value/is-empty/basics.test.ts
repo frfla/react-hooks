@@ -1,4 +1,4 @@
-import { isEmpty } from '@/ts/src/is-empty'
+import { isEmpty } from '@/util/src/is-empty'
 
 describe('is-empty', () => {
   test(`if values are null or undefined or ('')`, () => {
