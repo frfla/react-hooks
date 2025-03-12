@@ -42,7 +42,9 @@
     "./{react}/dist/**/*.{js,d.ts,mjs,d.mts}",
     "./{react}/package.json",
     "./{react}/README.md",
-    "./README.md"
+    "./{react}/README.*.md",
+    "./README.md",
+    "./README.*.md"
   ],
   "author": "brewcold <seung.yoon.yu@gmail.com>",
   "license": "MIT",
