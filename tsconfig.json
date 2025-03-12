@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./*"]
+    },
+    "declaration": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "target": "es6",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "lib": ["dom", "dom.iterable", "ESNext", "ESNext.AsyncIterable"],
+    "noUncheckedIndexedAccess": true,
+    "noImplicitReturns": false,
+    "noUnusedLocals": true,
+    "outDir": "./dist",
+    "strict": true,
+    "noEmitOnError": true,
+    "downlevelIteration": true,
+    "skipLibCheck": true
+  },
+  "exclude": ["./**/dist", "node_modules", "dist"]
+}

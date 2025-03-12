@@ -1,0 +1,11 @@
+{
+  "name": "@frfla/use-modal",
+  "private": true,
+  "version": "1.0.1",
+  "scripts": {
+    "build": "bunchee"
+  },
+  "peerDependencies": {
+    "react": "*"
+  }
+}
