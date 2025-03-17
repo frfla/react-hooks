@@ -38,7 +38,8 @@
   "files": [
     "./dist/**/*.{js,d.ts,mjs,d.mts}",
     "./README.md",
-    "./README.*.md"
+    "./README.*.md",
+    "./package.json"
   ],
   "author": "brewcold <seung.yoon.yu@gmail.com>",
   "license": "MIT",
