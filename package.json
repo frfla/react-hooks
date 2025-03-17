@@ -1,6 +1,6 @@
 {
   "name": "@frfla/react-hooks",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "React Util Hooks",
   "repository": "https://github.com/frfla/react-hooks",
   "main": "./react/dist/cjs/index.mjs",
@@ -36,7 +36,7 @@
     }
   },
   "files": [
-    "./{react}/dist",
+    "./{react}/dist/**/*",
     "./{react}/package.json",
     "./{react}/README.md",
     "./{react}/README.*.md",
