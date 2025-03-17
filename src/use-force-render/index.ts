@@ -3,7 +3,7 @@ import { useCallback, useState } from 'react'
 /**
  * A React hook for forcibly rendering a component
  *
- * @Link https://github.com/frfla/react-hooks/blob/main/react/src/use-force-render/README.md
+ * @Link https://github.com/frfla/react-hooks/blob/main/src/use-force-render/README.md
  * @example
  *  function Tooltip({ message }) {
  *   const display = useRef(false);

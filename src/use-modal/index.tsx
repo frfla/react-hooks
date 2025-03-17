@@ -3,7 +3,7 @@ import { ModalContext, Provider } from './provider'
 
 /**
  * A React hook for using modal easily
- * @Link https://github.com/frfla/react-hooks/blob/main/react/src/use-modal/README.md
+ * @Link https://github.com/frfla/react-hooks/blob/main/src/use-modal/README.md
  * @example
  * //App.jsx
  * export default function App() {
