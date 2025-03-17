@@ -1,6 +1,6 @@
 import { Context, createContext, useContext } from 'react'
 import { UseForm } from './types'
-import { useForm } from './'
+import { useForm } from '.'
 
 /**
  * createContext API that includes type definitions of useForm.

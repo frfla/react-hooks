@@ -1,5 +1,5 @@
 import { renderHook, act, waitFor } from '@testing-library/react'
-import { useBooleanState } from '@/react/src'
+import { useBooleanState } from '@/src/index'
 
 describe('Hook Initialization', () => {
   it('should correctly set initial values ', () => {

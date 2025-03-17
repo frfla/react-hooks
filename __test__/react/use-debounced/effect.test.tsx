@@ -1,4 +1,4 @@
-import { useDebouncedEffect } from '@/react/src/use-debounced'
+import { useDebouncedEffect } from '@/src/use-debounced'
 import { renderHook } from '@testing-library/react'
 
 describe('useDebouncedEffect', () => {

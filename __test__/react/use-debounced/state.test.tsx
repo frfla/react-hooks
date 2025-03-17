@@ -1,4 +1,4 @@
-import { useDebouncedState } from '@/react/src/use-debounced'
+import { useDebouncedState } from '@/src/use-debounced'
 import { act, renderHook } from '@testing-library/react'
 
 describe('useDebouncedState', () => {

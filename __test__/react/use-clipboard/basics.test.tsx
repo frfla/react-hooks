@@ -1,4 +1,4 @@
-import { useTextCopy } from '@/react/src'
+import { useTextCopy } from '@/src/index'
 import { act, renderHook, waitFor } from '@testing-library/react'
 
 describe('useTextCopy', () => {

@@ -1,5 +1,5 @@
 import { render, renderHook, act, screen, fireEvent, waitFor } from '@testing-library/react'
-import { useForm } from '@/react/src/use-form'
+import { useForm } from '@/src/use-form'
 import nock from 'nock'
 import axios from 'axios'
 

@@ -1,4 +1,4 @@
-import { useForceRender } from '@/react/src/use-force-render'
+import { useForceRender } from '@/src/use-force-render'
 import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { useRef } from 'react'
 
