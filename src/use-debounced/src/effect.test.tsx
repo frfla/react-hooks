@@ -1,4 +1,4 @@
-import { useDebouncedEffect } from '@/src/use-debounced'
+import { effect } from './effect'
 import { renderHook } from '@testing-library/react'
 
 describe('useDebouncedEffect', () => {
@@ -6,7 +6,7 @@ describe('useDebouncedEffect', () => {
 
   it('should call the function after the specified delay', () => {
     const mockFn = jest.fn()
-    renderHook(() => useDebouncedEffect(mockFn, 1000))
+    renderHook(() => effect(mockFn, 1000))
     expect(mockFn).not.toHaveBeenCalled()
 
     jest.runAllTimers()

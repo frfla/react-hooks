@@ -1,5 +1,5 @@
 import '@testing-library/jest-dom'
-import { ModalProvider, useModal } from '@/src/index'
+import { ModalProvider, useModal } from '.'
 import { render, screen } from '@testing-library/react'
 import { userEvent } from '@testing-library/user-event'
 import { ReactElement } from 'react'

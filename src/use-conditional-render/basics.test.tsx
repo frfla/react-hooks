@@ -1,4 +1,4 @@
-import { useConditionalRender } from '@/src/use-conditional-render'
+import { useConditionalRender } from '.'
 import { act, renderHook } from '@testing-library/react'
 
 describe('useConditionalRender', () => {

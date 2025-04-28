@@ -1,8 +1,8 @@
-import { createContext } from 'react'
+import { createContext, RefObject } from 'react'
 import { render, renderHook, act, screen, fireEvent, waitFor } from '@testing-library/react'
-import { useForm } from '@/src/use-form'
+import { useForm } from '.'
 import { ReactNode } from 'react'
-import { createUseFormContext, useFormContext } from '@/src/use-form/context'
+import { createUseFormContext, useFormContext } from './context'
 
 import nock from 'nock'
 import axios from 'axios'
@@ -181,8 +181,8 @@ describe('Component Bindings', () => {
           placeholder="nickname"
           type="text"
           name="nickname"
-          ref={result.current?.refs?.nickname}
-          value={result.current?.refs?.nickname.current?.value}
+          ref={result.current?.refs?.nickname as RefObject<HTMLInputElement>}
+          value={result.current?.refs?.nickname?.current?.value}
           onChange={result.current?.handleChange}
         />
         <button type="submit">Submit</button>
@@ -228,8 +228,8 @@ describe('Component Bindings', () => {
           placeholder="nickname"
           type="text"
           name="nickname"
-          ref={result.current.refs?.nickname}
-          value={result.current.refs?.nickname.current?.value}
+          ref={result.current.refs?.nickname as RefObject<HTMLInputElement>}
+          value={result.current.refs?.nickname?.current?.value}
           onChange={result.current.handleChange}
         />
         <button type="submit">Submit</button>
