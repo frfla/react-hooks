@@ -1,6 +1,6 @@
 {
   "name": "@frfla/react-hooks",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "description": "React Util Hooks",
   "repository": "https://github.com/frfla/react-hooks",
   "main": "./dist/cjs/index.js",
@@ -41,9 +41,10 @@
     "./README.*.md",
     "./package.json"
   ],
-  "author": "brewcold <seung.yoon.yu@gmail.com>",
+  "author": "vvyre <seung.yoon.yu@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@frfla/laser": "^0.1.0",
     "@swc/cli": "^0.3.12",
     "@swc/core": "^1.4.12",
     "@swc/jest": "^0.2.36",
@@ -69,8 +70,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.3.2",
-    "@frfla/laser": "^0.1.0"
+    "typescript": "^5.8.3"
   },
   "peerDependencies": {
     "react": ">=18"
