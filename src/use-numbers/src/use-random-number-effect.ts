@@ -1,4 +1,4 @@
-import { getRandomNumber, isClient, isServer } from '@/util/src'
+import { getRandomNumber, isClient, isServer } from '@frfla/laser'
 import { DependencyList, Dispatch, SetStateAction, useEffect, useState } from 'react'
 
 /**

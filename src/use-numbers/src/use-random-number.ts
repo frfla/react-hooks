@@ -1,4 +1,4 @@
-import { getRandomNumber } from '@/util/src'
+import { getRandomNumber } from '@frfla/laser'
 import { useState } from 'react'
 
 /**

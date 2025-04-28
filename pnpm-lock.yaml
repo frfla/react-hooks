@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@frfla/laser':
+        specifier: ^0.1.0
+        version: 0.1.0
       '@swc/cli':
         specifier: ^0.3.12
         version: 0.3.12(@swc/core@1.4.12(@swc/helpers@0.5.9))
@@ -297,6 +300,9 @@ packages:
 
   '@fastify/deepmerge@1.3.0':
     resolution: {integrity: sha512-J8TOSBq3SoZbDhM9+R/u77hP93gz/rajSA+K2kGyijPpORPWUXHUpTaleoj+92As0S9uPRP7Oi8IqMf0u+ro6A==}
+
+  '@frfla/laser@0.1.0':
+    resolution: {integrity: sha512-oFy5Q8ix+ViXIHQ/vUH5PnLX/wnaqKd2FZCKgaDQc8Sj7EOza0yU6pu7Mj1jzzvHuaD935UkZlE+SX9JXs7Thw==}
 
   '@humanwhocodes/config-array@0.11.14':
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
@@ -3219,6 +3225,8 @@ snapshots:
   '@eslint/js@8.57.0': {}
 
   '@fastify/deepmerge@1.3.0': {}
+
+  '@frfla/laser@0.1.0': {}
 
   '@humanwhocodes/config-array@0.11.14':
     dependencies:
