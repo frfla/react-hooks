@@ -1,6 +1,6 @@
 module.exports = {
   testEnvironment: 'jsdom',
-  testRegex: '/__test__/.*\\.test\\.(ts|tsx)?$',
+  testRegex: '/src/test/.*\\.test\\.(ts|tsx)?$',
   testPathIgnorePatterns: ['/node_modules/', '/e2e/'],
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   moduleNameMapper: {

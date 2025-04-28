@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { useBooleanState } from '../use-boolean-state'
+import { useBooleanState } from '/use-boolean-state'
 
 /**
  * React Hook for triggering (un)mount component

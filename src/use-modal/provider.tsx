@@ -1,7 +1,7 @@
 import { PropsWithChildren, createContext, useState } from 'react'
 import type { ReactNode } from 'react'
 import { ModalProps, defineModal } from './types'
-import { useBooleanState } from '../use-boolean-state'
+import { useBooleanState } from '/use-boolean-state'
 
 export const ModalContext = createContext<ModalProps>({
   open: () => {},

@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
+    "rootDir": ".",
     "paths": {
-      "@/*": ["./*"]
+      "/*": ["./src/*"],
+      "test/*": ["./test/*"]
     },
     "declaration": true,
     "esModuleInterop": true,

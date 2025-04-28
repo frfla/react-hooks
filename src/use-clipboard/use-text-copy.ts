@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { useBooleanState } from '../use-boolean-state'
+import { useBooleanState } from '/use-boolean-state'
 
 /**
  * - A React hook for copying plain text to clipboard
