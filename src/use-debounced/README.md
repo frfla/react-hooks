@@ -1,4 +1,4 @@
-# useConditionalRender
+# useDebounced
 
 - React Hook for debounced effect / state
 
