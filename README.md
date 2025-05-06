@@ -53,6 +53,6 @@ React Utility Custom Hook Package
 
 - A React hook for using form easily
 - During the **beta** period, the API may unexpectedly change or new features may be added
-- supports textarea and inputs (text, number, checkbox)
+- supports `textarea` and `input` (type text, number, checkbox)
 - provides APIs, `createUseFormContext` and `useFormContext` for integrating with Context API
 - [DOCS](https://frfla.github.io/react-hooks/use-form)
