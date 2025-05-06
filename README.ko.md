@@ -53,7 +53,7 @@ pnpm add @frfla/react-hooks
 - 향후 다른 타입들도 제공 예정
 - 예시: `const [ copy, isCopied, restoreState ] = useTextCopy(duration, onError)`
 - **localhost 또는 https 환경에서만 작동**
-- [DOCS](https://frfla.github.io/react-hooks/use-clipboard)## useForm (beta)
+- [DOCS](https://frfla.github.io/react-hooks/use-clipboard)
 
 ## useForm (Beta)
 
