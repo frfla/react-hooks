@@ -1,6 +1,12 @@
 # @frfla/react-hooks
 
-React 유틸리티 커스텀 훅 패키지
+**React 유틸리티 커스텀 훅 패키지**
+
+```
+npm install @frfla/react-hooks
+yarn add @frfla/react-hooks
+pnpm add @frfla/react-hooks
+```
 
 ## useBooleanState
 

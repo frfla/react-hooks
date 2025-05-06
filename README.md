@@ -1,6 +1,12 @@
 # @frfla/react-hooks
 
-React Utility Custom Hook Package
+**React Utility Custom Hook Package**
+
+```
+npm install @frfla/react-hooks
+yarn add @frfla/react-hooks
+pnpm add @frfla/react-hooks
+```
 
 ### `useBooleanState`
 
