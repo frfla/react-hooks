@@ -5,7 +5,7 @@ import { debounce } from './_debounce'
  * @param fn: callback
  * @param delay: ms
  */
-export const useDebouncedCallback = <T extends (...args: any[]) => any>(
+export const callback = <T extends (...args: any[]) => any>(
   fn: T,
   delay: number,
   deps: DependencyList = []
