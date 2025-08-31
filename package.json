@@ -1,6 +1,6 @@
 {
   "name": "@frfla/react-hooks",
-  "version": "0.10.6",
+  "version": "0.250831.0",
   "description": "React Util Hooks",
   "repository": "https://github.com/frfla/react-hooks",
   "main": "./dist/cjs/index.js",
