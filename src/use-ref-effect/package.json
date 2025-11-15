@@ -1,0 +1,11 @@
+{
+  "name": "@frfla/use-ref-effect",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "build": "bunchee"
+  },
+  "peerDependencies": {
+    "react": "*"
+  }
+}
