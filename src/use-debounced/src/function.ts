@@ -2,10 +2,10 @@ import { useCallback, useEffect, useRef, type DependencyList } from 'react'
 import { debounce } from './_debounce'
 
 /** returns `fn` with `delay`ms debouncing
- * @param fn: callback
+ * @param fn: fn
  * @param delay: ms
  */
-export const callback = <T extends (...args: any[]) => any>(
+export const func = <T extends (...args: any[]) => any>(
   fn: T,
   delay: number,
   deps: DependencyList = []
