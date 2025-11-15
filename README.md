@@ -8,57 +8,57 @@ yarn add @frfla/react-hooks
 pnpm add @frfla/react-hooks
 ```
 
-### `useBooleanState`
+### useBooleanState
 
 - A useState hook for using boolean state conveniently
 - example `const [display, show, hide, toggle] = useBooleanState(initialState)`
 - If `initialState` is not provided as an argument, the default state value is set to **false**.
 - [DOCS](https://frfla.github.io/react-hooks/use-boolean-state)
 
-### `useConditionalRender`
+### useConditionalRender
 
 - A React hook for using conditional render easily
 - useful in triggering animation with (un)mounting component
 - [DOCS](https://frfla.github.io/react-hooks/use-conditional-render)
 
-### `useDebouncedEffect/useDebouncedState`
+### useDebouncedEffect / State / Fn
 
 - A React hook for debounced effect/state
 - [DOCS](https://frfla.github.io/react-hooks/use-debounced)
 
-### `useForceRender`
+### useForceRender
 
 - A React hook for forcibly rendering a component
 - [DOCS](https://frfla.github.io/react-hooks/use-force-render)
 
-### `useIsomorphicLayoutEffect`
+### useIsomorphicLayoutEffect
 
 - In an SSR environment, useEffect should be used, while on the client side, useLayoutEffect should be utilized.
 - helps prevent hydration errors
 - [DOCS](https://frfla.github.io/react-hooks/use-isomorphic-layout-effect)
 
-### `useModal`
+### useMediaQuery
+
+- A React hook for using MediaQuery easily
+- [DOCS](https://frfla.github.io/react-hooks/use-media-query)
+
+### useModal
 
 - A React hook for using Modal easily
 - [DOCS](https://frfla.github.io/react-hooks/use-modal)
 
-### `Number Hooks`
+### useRefEffect
 
-- React hooks for using numbers easily
-- [DOCS](https://frfla.github.io/react-hooks/use-numbers)
+- A React hook for give effect to Ref values
+- [DOCS](https://frfla.github.io/react-hooks/use-ref-effect)
 
-### `useTextCopy`
+### useTextCopy
 
 - A React hook for copying plain text to clipboard
 - other types will be provided later
-- example: `const [ copy, isCopied, restoreState ] = useTextCopy(duration, onError)`
 - **works only in localhost or https**
 - [DOCS](https://frfla.github.io/react-hooks/use-clipboard)
 
-### `useForm (beta)`
+### ~~useForm (beta)~~
 
-- A React hook for using form easily
-- During the **beta** period, the API may unexpectedly change or new features may be added
-- supports `textarea` and `input` (type text, number, checkbox)
-- provides APIs, `createUseFormContext` and `useFormContext` for integrating with Context API
-- [DOCS](https://frfla.github.io/react-hooks/use-form)
+- deleted v0.251115.0

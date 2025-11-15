@@ -21,7 +21,7 @@ pnpm add @frfla/react-hooks
 - 컴포넌트의 (언)마운트를 이용한 애니메이션 트리거에 유용
 - [DOCS](https://frfla.github.io/react-hooks/use-conditional-render)
 
-## useDebouncedEffect/useDebouncedState
+## useDebouncedEffect/useDebouncedState/useDebouncedFn
 
 - 디바운스 효과/상태를 위한 리액트 훅
 - [DOCS](https://frfla.github.io/react-hooks/use-debounced)
@@ -33,29 +33,36 @@ pnpm add @frfla/react-hooks
 
 ## useIsomorphicLayoutEffect
 
-- SSR 환경에서는 `useEffect`를, 클라이언트 사이드에서는 `useLayoutEffect`를 사용해야 함
+- SSR 환경에서는 `useEffect`를, 클라이언트 사이드에서는 `useLayoutEffect`를 사용해야 할 때 사용할 수 있는 훅
 - 하이드레이션 에러를 방지하는 데 도움을 줌
 - [DOCS](https://frfla.github.io/react-hooks/use-isomorphic-layout-effect)
+
+## useMediaQuery
+
+- 미디어 쿼리의 일치 여부와 [MediaQueryList를](https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList) 쉽게 사용할 수 있는 훅
+- string, array 형태의 쿼리를 사용 가능
+- [DOCS](https://frfla.github.io/react-hooks/use-media-query)
 
 ## useModal
 
 - 모달을 쉽게 사용할 수 있는 리액트 훅
 - [DOCS](https://frfla.github.io/react-hooks/use-modal)
 
-## Number Hooks
+## useRefEffect
 
-- 숫자 다루기를 쉽게 하는 리액트 훅
-- [DOCS](https://frfla.github.io/react-hooks/use-numbers)
+- 특정 값에 Ref + effect를 발생시키고 싶을 때 사용하는 훅
+- [DOCS](https://frfla.github.io/react-hooks/use-ref-effect)
 
 ## useTextCopy
 
 - 일반 텍스트를 클립보드로 복사하기 위한 리액트 훅
 - 향후 다른 타입들도 제공 예정
-- 예시: `const [ copy, isCopied, restoreState ] = useTextCopy(duration, onError)`
 - **localhost 또는 https 환경에서만 작동**
 - [DOCS](https://frfla.github.io/react-hooks/use-clipboard)
 
-## useForm (Beta)
+---
+
+## ~~useForm (Beta)~~ 0.251115.0에서 삭제
 
 - 폼을 쉽게 다루기 위한 리액트 훅
 - 베타 기간 동안 API가 예고 없이 변경되거나 새로운 기능이 추가될 수 있음
