@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react'
+import { useCallback, useReducer, useState } from 'react'
 
 /**
  * A React hook for forcibly rendering a component
@@ -29,8 +29,6 @@ import { useCallback, useState } from 'react'
  */
 
 export const useForceRender = () => {
-  const [_, setState] = useState(0)
-  const forceRender = useCallback(() => setState(prev => prev + 1), [])
-
+  const [, forceRender] = useReducer(x => x + 1, 0)
   return forceRender
 }
