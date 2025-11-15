@@ -1,6 +1,6 @@
 {
   "name": "@frfla/react-hooks",
-  "version": "0.250831.0",
+  "version": "0.251113.0",
   "description": "React Util Hooks",
   "repository": "https://github.com/frfla/react-hooks",
   "main": "./dist/cjs/index.js",
@@ -16,10 +16,10 @@
     "clipboard"
   ],
   "scripts": {
-    "test-build": "pnpx jest --verbose",
-    "test": "pnpx jest --watchAll --verbose",
-    "coverage": "pnpx jest --coverage",
-    "build": "pnpm build-package .",
+    "test-build": "bunx jest --verbose",
+    "test": "bunx jest --watchAll --verbose",
+    "coverage": "bunx jest --coverage",
+    "build": "bun run build-package .",
     "build-package": "bunchee --cwd",
     "release": "npm publish"
   },
