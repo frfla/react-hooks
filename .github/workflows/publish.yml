@@ -10,27 +10,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v1
         with:
-          node-version: '20'
-          registry-url: 'https://registry.npmjs.org/'
+          bun-version: latest
 
-      - name: Install package manager
-        run: npm install -g pnpm
-
-      - name: Install deps
-        run: pnpm install
+      - name: Install dependencies
+        run: bun install
 
       - name: Run tests
-        run: pnpm run test-build
+        run: bun run test-build
 
       - name: Build
-        run: pnpm run build
+        run: bun run build
 
       - name: Publish to npm
-        run: pnpm publish
+        run: bun publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
