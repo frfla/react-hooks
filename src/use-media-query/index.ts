@@ -1,16 +1,11 @@
-'use client'
-
 import { useMemo, useState } from 'react'
 import { useIsomorphicLayoutEffect } from '/use-isomorphic-layout-effect'
 import { useForceRender } from '/use-force-render'
 
 /**
- * React hook for using random number with range easily
- * @param range [number, number]
- * @param type 'number'|'int', default: 'number'
- * @param deps effect hook deps list
- * @param initialState initial state for state
- * @returns number N that low <= N < high (react state)
+ * React hook for using media query conveniently
+ * @param query string | string[]
+ * @returns [matches, mediaQuery]: [boolean, MediaQueryList] | [boolean[], MediaQueryList[]]
  */
 export function useMediaQuery(query: string): [boolean, MediaQueryList]
 export function useMediaQuery(query: string[]): [boolean[], MediaQueryList[]]
