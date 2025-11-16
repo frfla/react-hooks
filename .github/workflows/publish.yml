@@ -14,8 +14,6 @@ jobs:
 
       - name: Set up Bun
         uses: oven-sh/setup-bun@v1
-        with:
-          bun-version: latest
 
       - name: Install dependencies
         run: bun install
@@ -26,7 +24,11 @@ jobs:
       - name: Build
         run: bun run build
 
-      - name: Publish to npm
-        run: bun publish --access public
+      - name: Configure npm auth
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" > ~/.npmrc
         env:
           NODE_AUTH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
+
+      - name: Publish to npm
+        run: bun publish --access public
