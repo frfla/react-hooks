@@ -8,21 +8,25 @@ on:
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up Bun
-        uses: oven-sh/setup-bun@v1
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          registry-url: 'https://registry.npmjs.org/'
 
       - name: Install dependencies
-        run: bun install
+        run: npm install
 
       - name: Run tests
-        run: bun run test-build
+        run: npm run test-build
 
       - name: Build
-        run: bun run build
+        run: npm run build
 
       - name: Configure npm auth
         run: |
@@ -32,4 +36,9 @@ jobs:
 
       - name: Deprecate versions
         run: |
-          bunx npm deprecate @frfla/react-hooks@"<99.0.0" "This package is deprecated."
+          npm deprecate @frfla/react-hooks@"<99.0.0" "This package is deprecated."
+
+      - name: Publish to npm
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
