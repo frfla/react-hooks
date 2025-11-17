@@ -25,6 +25,10 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
 
-      - name: Deprecate versions
+      - name: Deprecate all versions
         run: |
-          npm deprecate @frfla/react-hooks@"<99.0.0" "This package is deprecated."
+          VERSIONS=$(npm view @frfla/react-hooks versions --json | jq -r '.[]')
+          for v in $VERSIONS; do
+            echo "Deprecating version $v"
+            npm deprecate @frfla/react-hooks@$v "This package is deprecated."
+          done
