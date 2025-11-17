@@ -30,5 +30,6 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
 
-      - name: Publish to npm
-        run: bun publish --access public
+      - name: Deprecate versions
+        run: |
+          bunx npm deprecate @frfla/react-hooks@"<99.0.0" "This package is deprecated."
